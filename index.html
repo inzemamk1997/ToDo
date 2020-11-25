@@ -7,12 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
+    <div id="container">
         <h1>My ToDo List</h1>
         <div class="controls">
-            <input type="text" class="text">
-            <button type="button">Add Todo</button>
+            <input type="text" id="input"> <br>
+            <button type="button" id="add">Add Todo</button>
+            <button type="button" id="remove">Remove done Todo</button>
         </div>
+        <ul id="list">
+            <li class="mycheck"><input type="checkbox" name="checkbox" id="check"><label for="">Go to Gym</label></li>
+            <li class="mycheck"><input type="checkbox" name="checkbox" id="check" checked><label for="" >Record Youtube videos</label></li>
+        </ul>
     </div>
     <script src="todo.js"></script>
 </body>
